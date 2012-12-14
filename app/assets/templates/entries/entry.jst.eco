@@ -1,1 +1,17 @@
-<%= @entry.get('message') %>
+<table style="width:100%">
+  <tr>
+    <td style="float:right;">
+      <form id="delete_entry">
+        <input type="submit" id="delete" value="Delete" />
+      </form>
+    </td>
+    <td style="float:right;">
+      <form id="edit_entry">
+        <input type="submit" id="edit" value="Edit" />
+      </form>
+    </td>
+    <td width="80%" style="float:right">
+      <%= @entry.get('message') %>
+    </td>
+  </tr>
+</table>

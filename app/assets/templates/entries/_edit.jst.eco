@@ -1,0 +1,12 @@
+<table style="width:100%">
+  <tr>
+    <td width="80%">
+      <input type="textarea"  name="message_edit" id="edit_entry_message" value="<%= @entry.get('message') %>" />
+    </td>
+    <td style="float:right;">
+      <form id="edit_entry">
+        <input type="submit" id="update" value="Save" />
+      </form>
+    </td>
+  </tr>
+</table>

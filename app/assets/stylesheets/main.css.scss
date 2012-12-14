@@ -31,17 +31,23 @@ a {
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+
 }
 
 form input {
   font-size: 20px;
 }
-form input[type='text'] {
+form input[type='textarea'] {
   width: 535px;
+  height: 60px;
 }
-form input[type='submit'], #draw {
+
+#add, #draw {
   -webkit-appearance: caret;
-        font-size: 14px;
   font-size: 13px;
   padding: 5px 10px 6px 10px;
   font-weight: bold;
@@ -58,7 +64,77 @@ form input[type='submit'], #draw {
   text-shadow: 0 -1px 0 #036;
   text-align: middle;
   vertical-align: top;
+  height:65px;
 }
+
+#edit_entry_message {
+  width: 535px;
+  height: 60px;
+  font-size: 16px;
+ }
+#delete {
+  -webkit-appearance: caret;
+  font-size: 10px;
+  padding: 5px 10px 6px 10px;
+  font-weight: bold;
+  border: 1px solid #466A98;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #FFF;
+  background: #FF0000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#D61C1C));
+  background: -moz-linear-gradient(top,  #FF0000,  #D61C1C);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0000', endColorstr='#D61C1C');
+  text-decoration: none;
+  text-shadow: 0 -1px 0 #036;
+  text-align: middle;
+  vertical-align: top;
+}
+
+#edit {
+  -webkit-appearance: caret;
+  font-size: 10px;
+  padding: 5px 10px 6px 10px;
+  font-weight: bold;
+  border: 1px solid #466A98;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #FFF;
+  background: #F6FF00;
+  background: -webkit-gradient(linear, left top, left bottom, from(#72736A), to(#8F8F8F));
+  background: -moz-linear-gradient(top,  #72736A,  #8F8F8F);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#72736A', endColorstr='#8F8F8F');
+  text-decoration: none;
+  text-shadow: 0 -1px 0 #036;
+  text-align: middle;
+  vertical-align: top;
+}
+
+#update {
+  -webkit-appearance: caret;
+  font-size: 10px;
+  padding: 5px 10px 6px 10px;
+  font-weight: bold;
+  border: 1px solid #466A98;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #FFF;
+  background: #1B28E0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1B28E0), to(#2830A1));
+  background: -moz-linear-gradient(top,  #1B28E0,  #2830A1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1B28E0', endColorstr='#2830A1');
+  text-decoration: none;
+  text-shadow: 0 -1px 0 #036;
+  text-align: middle;
+  vertical-align: top;
+}
+
+#delete:hover, #edit:hover {
+   cursor:pointer;
+ }
 
 #draw {
   margin: 20px auto;
@@ -83,14 +159,4 @@ li {
   padding: 10px 10px;
   font-size: 16px;
   position: relative;
-  .winner {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: #999;
-    &.highlight {
-      color: #DD0000;
-      font-weight: bold;
-    }
-  }
 }
