@@ -32,4 +32,3 @@ class MessageBoard.Views.EntriesIndex extends Backbone.View
       for attribute, messages of errors
         alert "#{attribute} #{message}" for message in messages
 
-

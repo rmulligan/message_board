@@ -9,3 +9,4 @@ window.MessageBoard =
 
 $(document).ready ->
   MessageBoard.initialize()
+  
