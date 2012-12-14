@@ -3,7 +3,9 @@ window.MessageBoard =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: ->
+    new MessageBoard.Routers.Entries()
+    Backbone.history.start(pushState: true)
 
 $(document).ready ->
   MessageBoard.initialize()
