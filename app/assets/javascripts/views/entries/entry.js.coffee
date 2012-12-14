@@ -13,7 +13,8 @@ class MessageBoard.Views.Entry extends Backbone.View
   deleteEntry: (event) ->
     event.preventDefault()
     id = @model.get('id')
-    @model.destroy id
+    @model.destroy id,
+    wait: true
     @collection = new MessageBoard.Collections.Entries()
     @collection.fetch()
     view = new MessageBoard.Views.EntriesIndex(collection: @collection)
