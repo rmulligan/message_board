@@ -20,6 +20,10 @@ end
 group :test do
   gem 'capybara'
   gem 'poltergeist'
+  gem 'rb-fsevent'
+  gem 'guard-rspec'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 gem 'jquery-rails'
